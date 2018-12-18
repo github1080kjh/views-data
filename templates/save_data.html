@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+{#    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">#}
+{#    <link rel="stylesheet" href="/static/bootstrap/css/bootstrap.min.css">#}
+{#    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">#}
+</head>
+<body>
+<form action="/saveData/" method="post">
+    {% csrf_token %}
+    <input type="text" value="confirm" name="event">
+    <button type="submit">确定向数据库中写入数据</button>
+</form>
+
+
+{#<script src="/static/jquery-3.3.1.min.js"></script>#}
+{#<script src="/static/bootstrap/js/bootstrap.min.js"></script>#}
+</body>
+</html>
